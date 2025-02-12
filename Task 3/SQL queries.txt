@@ -1,0 +1,41 @@
+-- creating a database called FeeReportDB in MySQL
+
+CREATE DATABASE FeeReportDB;
+
+-- using that Database
+
+USE FeeReportDB;
+
+-- creating a table called admin 
+
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL
+);
+
+-- creating a table called accountant 
+
+CREATE TABLE accountant (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone VARCHAR(15) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+-- creating a table called student
+ 
+CREATE TABLE student (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    course VARCHAR(100) NOT NULL,
+    fee DOUBLE NOT NULL,
+    paid DOUBLE NOT NULL,
+    due DOUBLE DEFAULT 0,
+    address VARCHAR(255) DEFAULT NULL,
+    phone VARCHAR(15) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
