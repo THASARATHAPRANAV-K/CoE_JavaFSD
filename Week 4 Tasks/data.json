@@ -1,0 +1,7 @@
+{
+    "courses": [
+        { "id": 1, "name": "Web Development", "description": "Learn HTML, CSS, and JavaScript.", "instructor": "John Doe" },
+        { "id": 2, "name": "Machine Learning", "description": "Explore AI and ML models.", "instructor": "Jane Smith" },
+        { "id": 3, "name": "Python for Beginners", "description": "Master Python basics.", "instructor": "David Johnson" }
+    ]
+}
