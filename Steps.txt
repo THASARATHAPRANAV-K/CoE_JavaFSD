@@ -1,0 +1,27 @@
+HTML File for Book Cards:
+
+Renders book cards displaying details like image, title, description, and publish date.
+Clientlibs Integration:
+
+Added site.js in the clientlibs folder to fetch data using an API URL.
+Author Component in Template:
+
+Includes fields for Author Name, Author DOB, and a checkbox for data fetching via API.
+Author Card Details:
+
+Displays author information like name and bio.
+Load More Functionality:
+
+Enables fetching additional data from the API (if available) upon clicking the Load More button.
+Custom API Integration:
+
+Utilized a custom API to fetch data in the AEM environment.
+AuthorModel Enhancement:
+
+Modified the AuthorModel file to retrieve details from the API.
+Service Modifications:
+
+Updated relevant services to support data retrieval.
+Testing:
+
+Developed test codes for both the Models and the Servlet to ensure functionality.
